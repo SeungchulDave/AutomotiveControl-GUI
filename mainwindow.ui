@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QMdiArea" name="mdiArea">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="viewMode">
+       <enum>QMdiArea::TabbedView</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>35</width>
+     <height>35</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionvideo"/>
+   <addaction name="actionsetting"/>
+   <addaction name="actionFocus"/>
+   <addaction name="actionControl"/>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuVideo">
+    <property name="title">
+     <string>Video</string>
+    </property>
+    <addaction name="actionShow"/>
+    <addaction name="actionPause"/>
+   </widget>
+   <widget class="QMenu" name="menuSetting">
+    <property name="title">
+     <string>Setting</string>
+    </property>
+    <addaction name="actionIP_Address"/>
+    <addaction name="actionResolution"/>
+    <addaction name="actionBrightness"/>
+   </widget>
+   <addaction name="menuVideo"/>
+   <addaction name="menuSetting"/>
+  </widget>
+  <action name="actionShow">
+   <property name="text">
+    <string>Show</string>
+   </property>
+  </action>
+  <action name="actionPause">
+   <property name="text">
+    <string>Pause</string>
+   </property>
+  </action>
+  <action name="actionIP_Address">
+   <property name="text">
+    <string>IP Address</string>
+   </property>
+  </action>
+  <action name="actionResolution">
+   <property name="text">
+    <string>Resolution</string>
+   </property>
+  </action>
+  <action name="actionBrightness">
+   <property name="text">
+    <string>Brightness</string>
+   </property>
+  </action>
+  <action name="actionSeungchul">
+   <property name="text">
+    <string>Seungchul</string>
+   </property>
+  </action>
+  <action name="actionvideo">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/new/prefix1/resources/video.png</normaloff>:/new/prefix1/resources/video.png</iconset>
+   </property>
+   <property name="text">
+    <string>video</string>
+   </property>
+  </action>
+  <action name="actionsetting">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/new/prefix1/resources/setting.png</normaloff>:/new/prefix1/resources/setting.png</iconset>
+   </property>
+   <property name="text">
+    <string>setting</string>
+   </property>
+  </action>
+  <action name="actionFocus">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/new/prefix1/resources/search.png</normaloff>:/new/prefix1/resources/search.png</iconset>
+   </property>
+   <property name="text">
+    <string>Focus</string>
+   </property>
+  </action>
+  <action name="actionControl">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/new/prefix1/resources/rc.png</normaloff>:/new/prefix1/resources/rc.png</iconset>
+   </property>
+   <property name="text">
+    <string>Control</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="icon.qrc"/>
+ </resources>
+ <connections/>
+</ui>
